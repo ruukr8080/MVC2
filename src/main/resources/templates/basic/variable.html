@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>SpringEl 표현식</h1>
+<ul>Object
+    <li>${user.username} = <span th:text="${user.username}"> </span></li>
+    <li>${users['username']} = <span th:text="${user['username']}"> </span></li>
+    <li>${users.getUsername()} = <span th:text="${user.getUsername()}"> </span></li>
+</ul>
+<ul>List
+    <li>${users[0].username} = <span th:text="${users.username}"> </span></li>
+    <li>${users[0]['username']} = <span th:text="${users['username']}"> </span></li>
+    <li>${users[0].getUsername()} = <span th:text="${users.getUsername()}"> </span></li>
+</ul>
+<ul>Map
+    <li>${userMap['userA'].username} = <span th:text="${userMap.username}"> </span></li>
+    <li>${userMap['userA']['username']} = <span th:text="${userMap['username']}"> </span></li>
+    <li>${userMap['userA'].getUsername()} = <span th:text="${userMap.getUsername()}"> </span></li>
+</ul>
+</body>
+</html>
